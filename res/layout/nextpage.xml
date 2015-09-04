@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioGroup2">
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:id="@+id/radioins" android:text="New Remainder"></RadioButton>
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update Existing" android:id="@+id/radioupd"></RadioButton>
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radiodel" android:text="Delete Exixting"></RadioButton>
+    </RadioGroup>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:text="Date:" android:id="@+id/textViewdat"></TextView>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/dateR"></EditText>
+    <TextView android:id="@+id/textViewsub" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:text="Subject:"></TextView>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/subject"></EditText>
+    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:text="Description" android:id="@+id/textViewdesc"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="textMultiLine" android:id="@+id/editTextres" android:layout_weight="0.21">
+        <requestFocus></requestFocus>
+    </EditText>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Save Changes" android:layout_weight="0.19" android:id="@+id/buttonsave"></Button>
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Back" android:id="@+id/back1" android:layout_weight="0.67"></Button>
+    </LinearLayout>
+    
+</LinearLayout>

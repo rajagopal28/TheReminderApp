@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="Date:"></TextView>
+<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/editText1" android:inputType="number"></EditText>
+<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView2" android:text="Month:"></TextView>
+<Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/spinner1"></Spinner>
+<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView3" android:text="Year:"></TextView>
+<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/editText2" android:inputType="number">
+    <requestFocus></requestFocus>
+</EditText>
+<RadioGroup android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/radio0" android:checked="true" android:text="For Date"></RadioButton>
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/radio1" android:text="For Month"></RadioButton>
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/radio2" android:text="For Year"></RadioButton>
+</RadioGroup>
+<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+    <Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Get Reminders" android:layout_weight="0.32"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="0.62" android:text="Edit Reminders" android:id="@+id/update"></Button>
+</LinearLayout>
+</LinearLayout>
